@@ -10,11 +10,12 @@ const mix = (c1, c2, w = '') => {
 
 const transformValue = (string, source) => {
   const idx = string.indexOf('mixc(')
+  if (idx < 0) return string
   if (idx >= 0) {
     const pre = string.substr(0, idx)
     const s = string.substr(idx)
     const { body, post } = balanced('(', ')', s)
-    if (!body) throw new Error(`unclosed parentheses in "${string}"`, source)
+    if (!body) throw new Error(`unclosed bracket in "${string}"`, source)
     const color = mix.apply(null, body.split(/,\s*(?![^()]*\))/))
     return pre + color + transformValue(post, source)
   }
