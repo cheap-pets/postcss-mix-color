@@ -1,0 +1,31 @@
+{
+  "name": "postcss-mix-color",
+  "version": "0.1.0",
+  "description": "a postcss plugin that mix 2 colors to a color value",
+  "main": "postcss-mix-color.cjs.js",
+  "module": "postcss-mix-color.esm.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cheap-pets/postcss-mix-color.git"
+  },
+  "keywords": [
+    "postcss",
+    "color",
+    "mix"
+  ],
+  "author": "scrollbar-ww",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cheap-pets/postcss-mix-color/issues"
+  },
+  "homepage": "https://github.com/cheap-pets/postcss-mix-color#readme",
+  "dependencies": {
+    "balanced-match": "^1.0.0",
+    "color": "^3.1.0",
+    "postcss": "^7.0.5",
+    "postcss-message-helpers": "^2.0.0"
+  }
+}
