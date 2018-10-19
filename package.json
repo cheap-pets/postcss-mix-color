@@ -1,7 +1,7 @@
 {
   "name": "postcss-mix-color",
-  "version": "0.1.1",
-  "description": "a postcss plugin that mix 2 colors to a color value",
+  "version": "0.1.6",
+  "description": "postcss plugin for mixing 2 colors to 1 color value",
   "main": "postcss-mix-color.cjs.js",
   "module": "postcss-mix-color.esm.js",
   "scripts": {
